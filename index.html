@@ -235,12 +235,25 @@
 
         .footer {
             background: #172e23;
-            color: #d9d2c5;
+            color: #ffffff;  /* сделан чисто белым */
             text-align: center;
             padding: 2rem 1rem;
             margin-top: 3rem;
             font-size: 0.85rem;
             border-top: 1px solid #d4af37;
+        }
+
+        /* дополнительные стили для текста внутри футера — гарантированно белый */
+        .footer p, .footer a, .footer span, .footer div {
+            color: #ffffff;
+        }
+        .footer a {
+            text-decoration: underline;
+            opacity: 0.9;
+        }
+        .footer a:hover {
+            opacity: 1;
+            text-decoration: none;
         }
 
         hr {
@@ -408,7 +421,7 @@
 <footer class="footer">
     <div class="container">
         <p>Исследование «Феномен верности России: ценностный выбор защитников Донбасса (2014–2020)»</p>
-        <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.8;">⚖️ Все материалы представлены строго в образовательных целях, в рамках академического исследования. Некоммерческий проект.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.75rem;">⚖️ Все материалы представлены строго в образовательных целях, в рамках академического исследования. Некоммерческий проект.</p>
     </div>
 </footer>
 
